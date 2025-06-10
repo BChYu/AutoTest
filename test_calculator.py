@@ -30,5 +30,12 @@ def test_mytest():
     with pytest.raises(SystemExit):# 使用 pytest 的异常断言上下文 验证代码是否引发预期的异常
         f()# 调用会引发异常的函数
 
+def test_file_operations(tmp_path):
+    tmp_file = tmp_path / 'test_file.txt'
+    content = 'Hello pytest!'
+    tmp_file.write_text(content)
+    assert tmp_file.exists()
+    assert tmp_file.read_text() == content
+
 # pytest
 # pytest -v
