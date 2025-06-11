@@ -1,12 +1,22 @@
 import pytest
+@pytest.mark.parametrize('a,b,c', [
+    (1,2,3),
+    (5,2,7),
+    (3,6,9)
+])
+def test_addition(a,b,c):
+    '''加法'''
+    assert a+b == c
 
-def test_addition():
-    result = 1 + 2
-    assert result == 3
-
-def test_subtraction():
-    result = 5 - 3
-    assert result == 1
+@pytest.mark.parametrize('a,b,c', [
+    (5,3,2),
+    (9,6,3),
+    (6,0,6)
+])
+def test_subtraction(a,b,c):
+    '''减法'''
+    result = a-b
+    assert result == c
 
 def test_string_concatenation():
     assert "hello" + "world" == "helloworld"
@@ -21,7 +31,7 @@ def test_zero_division():
 
 def test_failure_message():
     # 当失败时显示自定义错误信息（扩展学习）
-    result = 10
+    result = 9
     assert result % 2 == 1, f"{result}是偶数，但测试要求奇数"
 
 def f():
