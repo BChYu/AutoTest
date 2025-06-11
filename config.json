@@ -1,0 +1,9 @@
+{
+  "base_url": "https://api.example.com",
+  "timeout": 5,
+  "test_users": [
+    {"username": "test_user1", "role": "admin"},
+    {"username": "test_user2", "role": "guest"}
+  ],
+  "enable_logging": false
+}
