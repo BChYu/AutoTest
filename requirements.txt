@@ -1,0 +1,15 @@
+# 核心测试框架
+pytest==8.4.0
+
+# HTTP请求库
+requests==2.32.3
+
+# 报告增强
+pytest-html==4.1.1
+
+# 数据驱动支持
+#pytest-datadir==1.5.0
+
+# 请求重试机制
+#urllib3==2.3.0
+#requests-retry==0.9.9
