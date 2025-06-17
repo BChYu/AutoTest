@@ -1,0 +1,10 @@
+{
+  "test_douyin_api.py::test_video_list[test_data0]": true,
+  "test_douyin_api.py::test_video_list[test_data1]": true,
+  "test_douyin_api.py::test_authentication": true,
+  "test_douyin_api.py::test_api_error_handling": true,
+  "test_douyin_api.py::test_video_data_structure": true,
+  "test_douyin_api.py::test_video_list": true,
+  "test_douyin_api.py::test_video_list_parameterized[test_case0]": true,
+  "test_douyin_api.py::test_video_list_parameterized[test_case1]": true
+}

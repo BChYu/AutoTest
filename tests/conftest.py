@@ -35,9 +35,8 @@ def mock_douyin(monkeypatch):
         return mock_get().json_data
     monkeypatch.setattr(requests.Session, 'get', mock_get)
     monkeypatch.setattr(APIClient, '_handle_response', mock_handle_response)
-    yield   #恢复原始方法
+    yield       #恢复原始方法
     monkeypatch.setattr(requests.Session, 'get', requests.Session.get)
     monkeypatch.setattr(APIClient, '_handle_response', original_handle)
-
 
 

@@ -62,7 +62,7 @@ def test_video_list(douyin_client, test_data):
     for video in videos:
         assert video["statistics"]["like_count"] >= test_data["min_likes"]
 
-# 模拟测试
+# 模拟测试mock
 def test_video_count(douyin_client, mock_douyin):
     videos = douyin_client.get_video_list(user_id=0)
     print(f"返回的数据结构类型: {type(videos)}")

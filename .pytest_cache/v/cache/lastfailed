@@ -1,0 +1,9 @@
+{
+  "test_sample.py::test_answer": true,
+  "test_sample.py::test_subtraction": true,
+  "test_calculator.py::test_subtraction": true,
+  "conftest.py::test_api_endpoint": true,
+  "tests/test_douyin_api.py::test_video_list[test_data0]": true,
+  "tests/test_douyin_api.py::test_video_list[test_data1]": true,
+  "tests/test_douyin_api.py::test_video_count": true
+}
