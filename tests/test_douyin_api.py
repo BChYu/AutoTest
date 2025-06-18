@@ -45,9 +45,10 @@ def douyin_client():
 @pytest.mark.parametrize("test_data", TEST_VIDEO_LIST_DATA)
 def test_video_list(douyin_client, test_data):
     """测试获取用户视频列表API"""
-    response_data = douyin_client.get_video_list(
+    response = douyin_client.get_video_list(
         user_id=test_data["user_id"]
     )
+    response_data = response.json()
     print('response_data:{response_data}')
     # 验证响应数据
     assert response_data is not None            # 响应不应为空
