@@ -28,11 +28,13 @@ class APIClient:
         try:
             response.raise_for_status()         # 检查HTTP状态码 (4xx/5xx会触发异常)
             self.logger.info(f'API请求成功： {response.url}')
-            return response.json()              # 尝试解析JSON响应
+            return response
         except requests.exceptions.HTTPError as err:
             print(f"HTTP错误：{err}")
             self.logger.error(f'HTTP错误：{err}')
-            return None
+            # return None
+            return response  # 仍然返回响应对象（可通过response.status_code获取状态码）
         except json.JSONDecodeError:
             print('响应不是有效的JSON格式')
-            return None
+            # return None
+            return response
