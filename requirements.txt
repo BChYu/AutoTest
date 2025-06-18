@@ -9,7 +9,7 @@ pytest-html==4.1.1
 
 # 数据驱动支持
 #pytest-datadir==1.5.0
-
+pymysql == 1.1.1
 # 请求重试机制
 #urllib3==2.3.0
 #requests-retry==0.9.9

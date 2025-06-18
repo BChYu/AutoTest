@@ -16,8 +16,8 @@ class DBClient:
     def execute_update(self, sql, params=None):
         """执行更新操作（INSERT/UPDATE/DELETE）"""
         affected_rows = self.cursor.execute(sql, params or ())
-        self.connection.commit()
-        return affected_rows    # 返回影响的行数
+        self.connection.commit()    # 如果忘记commit，数据不会被真正修改！
+        return affected_rows        # 返回影响的行数
 
     def user_exists(self, username):
         """检查用户名是否存在"""
