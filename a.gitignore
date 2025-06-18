@@ -1,0 +1,14 @@
+# 忽略环境变量文件
+.env
+*.env
+
+# Python-specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+dist/
+build/
+*.egg-info/

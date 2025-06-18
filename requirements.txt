@@ -13,3 +13,5 @@ pytest-html==4.1.1
 # 请求重试机制
 #urllib3==2.3.0
 #requests-retry==0.9.9
+#环境变量管理
+python-dotenv == 1.1.0
