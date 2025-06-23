@@ -22,7 +22,7 @@ class DBClient:
     def user_exists(self, username):
         """检查用户名是否存在"""
         sql = "SELECT COUNT(*) AS count FROM users WHERE username = %s"
-        result = self.execute_query(sql, (username,))   # [{'count': 1}]  # count=1表示存在
+        result = self.execute_query(sql, (username,))   # [{'count': 1}]  # count=1表示存在 (username,)  # 注意逗号
         return result[0]['count'] > 0 if result else False
 
     def get_user(self, username):
