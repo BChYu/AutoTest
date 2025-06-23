@@ -32,3 +32,9 @@
 ## 测试注册流程：完整的注册API→数据库验证工作流
 ## 数据清理：测试后的数据库清理操作`yield fixture` 
 ## DBClient封装、使用环境变量管理敏感凭据、单独存放数据库配置文件
+
+# day 8: Selenium环境搭建
+## 编写web自动化脚本
+```bash
+cd ui_tests/day1_env_setup
+python first_selenium_script.py
