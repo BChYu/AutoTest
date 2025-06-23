@@ -36,5 +36,6 @@
 # day 8: Selenium环境搭建
 ## 编写web自动化脚本
 ```bash
+##UI自动化测试
 cd ui_tests/day1_env_setup
 python first_selenium_script.py
