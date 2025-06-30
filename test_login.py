@@ -1,5 +1,5 @@
 import pytest
-from test_data import LOGIN_TEST_DATA
+from test_datas import LOGIN_TEST_DATA
 
 def validate_login(username, password):
     '''模拟登录验证函数'''
