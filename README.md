@@ -33,9 +33,18 @@
 ## 数据清理：测试后的数据库清理操作`yield fixture` 
 ## DBClient封装、使用环境变量管理敏感凭据、单独存放数据库配置文件
 
-# day 8: Selenium环境搭建
+# Day 8: Selenium环境搭建
 ## 编写web自动化脚本
 ```bash
 ##UI自动化测试
 cd ui_tests/day1_env_setup
 python first_selenium_script.py
+```
+# Day 9: 元素定位八法实战 - 京东首页元素定位
+## 搜索框
+## 登录按钮
+### 元素定位八法：ID、Class name、Name、Tag name、Link text、Partial link text、XPath、CSS selector
+```bash
+cd ui_tests/day2
+python jd_element_locating.py
+```
